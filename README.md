@@ -1,6 +1,6 @@
 # Arrays and Functions
 
 
-## iterating and accessing elements of an array 
+ - iterating and accessing elements of an array 
 
-## writing functions to solve problems
+- writing functions to solve problems
