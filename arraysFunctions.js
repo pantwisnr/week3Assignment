@@ -71,17 +71,74 @@ for(let i=0; i < names.length; i++) {
 }
 console.log(`All values of namesLength add up to: ${allValues}`);
 
-
-
  
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
-//  QUES 1
+//  QUES 7  a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times
 
+// let numberOfWords = (word, n) => {
+//     for(let i = 0; i < n; i++){
+//         word += word;
+//     }
+// };
+
+let numberOfWords = (word, n) => {
+    let result = '';
+    for(let i = 0; i < n; i++){
+        result += word;
+    }
+    return result;
+};
+console.log(numberOfWords("Hello", 4));
+
+
+//  QUES 8
+let fullName = (firstName, lastName) => `${firstName} ${lastName}`;
+
+
+//  QUES 9
+function checkIfGreaterThan(numArray) {
+    let values = 0;
+    // loop through numArray and add each value to values. then check if values > 100.
+    for(let i=0; i < numArray.length; i++) {
+        values += numArray[i];
+    }
+    return values > 100;
+}
+
+//  QUES 10
+let returnAverage = (numArray) => {
+    let values = 0;
+    // loop through numArray and add each value to values. then divide by length of numArray.
+    for(let i=0; i < numArray.length; i++) {
+        values += numArray[i];
+    }
+    return values / numArray.length;
+}
+
+
+//  QUES 11  Two Averages
+let twoAverages = (numArray1, numArray2) => {
+    let numArray1values = 0;
+    // loop through numArray and add each value to values. 
+    for(let i=0; i < numArray1.length; i++) {
+        numArray1values += numArray1[i];
+    }
+
+    let numArray2values = 0;
+    // loop through numArray and add each value to values. 
+    for(let j=0; j < numArray2.length; j++) {
+        numArray2values += numArray2[j];
+    }
+    // retuen true if average of array1 is greater than average of array2
+    return (numArray1values / numArray1.length) > (numArray2values / numArray2.length);
+}
+
+
+//  QUES 12 function to check if you can buy a drink
+function willBuyDrink( isHotOutside, moneyInPocket){
+    if(isHotOutside === "true" && moneyInPocket > 10.50){
+        return true;
+    }
+}
+//  QUES 13 function to draw a circle
+
+let drawCircle = (r) => Math.PI *(r^2);
